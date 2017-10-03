@@ -1,0 +1,142 @@
+{% extends 'master.html' %}
+
+{% load static from staticfiles %}
+
+{% block boddy %}
+    
+    
+
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+  
+
+    <!-- About Us Page
+    ==========================================-->
+	<br>
+	<br>
+    <div id="tf-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{% static 'angoapp.jpg' %}" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h4>Who we are</h4>
+                            <h3>We Are Thinkers, Innovators and Scientist :  <strong> AngoApp</strong></h3>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">AngoApp é uma empresa que se foca em reforçar o sector tecnológico em Angola, África. AngoApp tem como suas funções centrais a criação de aplicativos móveis para a educação e entretenimento da população angolana assim como a automação de serviços das empresas nacionais.</p>
+                        <ul class="about-list">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Mission</strong> - <em>We deliver uniqueness and quality</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Skills</strong> - <em>Delivering fast and excellent results</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Clients</strong> - <em>Satisfied clients thanks to our experience</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Team Page
+    ==========================================-->
+    
+    <!-------------------------------------------------------------------------------------------->
+    
+	
+	
+	
+	<!-------------------------------------------------------------------------------------------->
+
+	
+		<div id="fh5co-about">
+			<div class="container">
+				<div class="row">
+                              <div class="section-title center">
+                              <h2 class="text-center">Meet <strong>our team</strong></h2>
+                              <div class="line">
+                                    <hr>
+                              </div>
+                        </div>
+							  
+								<div class="container">
+									{% for cont in administrators %}
+									<div class="col-md-6" id="" >
+										
+										<div class="col-md-6" id="" >
+											<img src="{{cont.Photo.url}}" style="max-height: 400px" class="img-responsive" alt="">
+										</div>
+										<h2>{{cont.Name}}</h2>
+										<h5>{{cont.Position}}</h5>
+										<br>
+										<p>Do not seek to change what has come before. Seek to create that which has not. Do not seek to change what has come before. Seek to create that which has not.</p>
+									</div>
+									 
+									{% endfor %}
+								</div>  
+							
+				</div>
+			</div>
+		</div>
+
+		<!-- END #fh5co-about -->
+    <!-------------------------------------------------------------------------------------------->
+    
+    
+	
+	<br>
+	<br>
+	
+	
+	<div class="container" >
+		<div class="row">
+			<div class="text-center col-md-4 col-md-offset-1" >
+				
+				<div class="">
+					<i class="fa fa-4x fa-server" aria-hidden="true" style="color: red"></i>
+					<h3>Why App Development?</h3>
+				</div>
+				
+				<p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+				Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+				A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+			</div>
+			
+			<div class="text-center col-md-4 col-md-offset-1">
+				<div class="">
+					<i class="fa fa-4x fa-server" aria-hidden="true" style="color: red"></i>
+					<h3>Why Web Development?</h3>
+				</div>
+				
+				<p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+				Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+				It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+			</div>
+			
+			
+		</div>
+	</div>
+      
+    
+    
+    
+{% endblock %}
+
+

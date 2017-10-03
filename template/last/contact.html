@@ -1,0 +1,148 @@
+{% extends 'master.html' %}
+
+{% load static from staticfiles %}
+
+{% block content %}
+    
+    
+    <style>
+       #tf-menu.navbar-default{
+            background: #333333;
+     }  
+        
+        
+        body{
+        
+            background: white;
+            color:333333;
+        
+        }
+        
+</style>
+    <!-- Contact Section
+    ==========================================-->
+    <div id="tf-contact" class="text-center">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <div class="section-title center">
+                        <h2>Feel free to <strong>contact us</strong></h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <div class="clearfix"></div>
+                        <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>            
+                    </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Message</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn tf-btn btn-default">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    
+    
+
+
+
+
+<!-- Section Testimonials
+================================================== -->
+<section id="testimonials">
+<div class="container">
+<div class="row">
+	<div class="col-md-12" data-wow-delay="0.2s">
+		<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+			<!-- Bottom Carousel Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="img/demo/testimonial1.jpg" alt="">
+				</li>
+				<li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/11/2015/11/23042525/1-150x150.png" alt="">
+				</li>
+			</ol>
+			<!-- Carousel Slides / Quotes -->
+			<div class="carousel-inner text-center">
+				<!-- Quote 1 -->
+				<div class="item active">
+					<blockquote>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<figure class="fh5co-devices animate-box"><img src="{% static 'desenvolvimento.jpg' %}" alt="Free HTML5 Bootstrap Template" class="img-responsive"></figure>
+
+							</div>
+						</div>
+					</blockquote>
+				</div>
+				<!-- Quote 2 -->
+				<div class="item">
+					<blockquote>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+                        <figure class="fh5co-devices animate-box"><img src="{% static 'desenvolvimento.jpg' %}" alt="Free HTML5 Bootstrap Template" class="img-responsive"></figure>
+
+								<small>Johnny Doe</small>
+							</div>
+						</div>
+					</blockquote>
+				</div>
+				<!-- End Quote 2 -->
+            
+           
+            
+            <div class="item">
+					<blockquote>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+                        
+                        <figure class="fh5co-devices animate-box"><img src="{% static 'desenvolvimento.jpg' %}" alt="Free HTML5 Bootstrap Template" class="img-responsive"></figure>
+						
+								
+								<small>Johnny Doe</small>
+							</div>
+						</div>
+					</blockquote>
+				</div>
+
+
+			</div>
+			<!-- Carousel Buttons Next/Prev -->
+			<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+			<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+
+<!-- Section Fun Facts
+================================================== -->
+    
+{% endblock %}
+
+
