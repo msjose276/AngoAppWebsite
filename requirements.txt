@@ -1,0 +1,3 @@
+# install packages in the [build] category, from setup.py
+# (path/to/mypkg is the directory where setup.py is)
+-e path/to/mypkg[build]
